@@ -3,7 +3,6 @@ import {v4 as uuid} from 'uuid';
 
 
 export const addExpense=({description="",amount=0,notes="",createdAt=0}={})=>{
-    console.log(description)
     return {
         type:ADD_EXPENSE,
         expense:{

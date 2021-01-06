@@ -16,6 +16,7 @@
     "enzyme": "3.0.0",
     "enzyme-adapter-react-16": "1.0.0",
     "enzyme-to-json": "3.0.1",
+    "extract-text-webpack-plugin": "3.0.0",
     "jest": "20.0.4",
     "live-server": "^1.2.0",
     "moment": "2.22.2",
@@ -41,7 +42,8 @@
   "scripts": {
     "compile": "babel src/app.js --out-file=public/bundle.js --presets=env,react --watch",
     "start": " live-server public/",
-    "build": "react-scripts build",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "test": "jest --config=jest.config.json",
     "eject": "react-scripts eject",
     "dev-server": "webpack-dev-server",
