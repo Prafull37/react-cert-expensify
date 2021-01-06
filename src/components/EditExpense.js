@@ -6,11 +6,11 @@ import {editExpense,removeExpense} from "../redux/actionCreators/expenseAction"
 
 export class EditExpense extends React.Component {
     onSubmit = (expense) => {
-      this.props.startEditExpense(this.props.expense.id, expense);
+      this.props.startEditExpense({id:this.props.expense.id, updates:expense});
       this.props.history.push('/');
     };
     onRemove = () => {
-      this.props.startRemoveExpense({ id: this.props.expense.id });
+      this.props.startRemoveExpense( this.props.expense.id );
       this.props.history.push('/');
     };
     render() {
@@ -38,7 +38,7 @@ export class EditExpense extends React.Component {
   });
   
   const mapDispatchToProps = (dispatch, props) => ({
-    startEditExpense: (id, expense) => dispatch(editExpense(id, expense)),
+    startEditExpense: (data) => dispatch(editExpense(data)),
     startRemoveExpense: (data) => dispatch(removeExpense(data))
   });
   
