@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render it  1`] = `
+<div>
+  <Link
+    replace={false}
+    to="/edit/1"
+  >
+    <h6>
+      Gum
+    </h6>
+  </Link>
+  <div>
+    195
+     - 
+    0
+  </div>
+</div>
+`;

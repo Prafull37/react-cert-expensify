@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test NavigationLink by snapshot 1`] = `
+<header>
+  <h2>
+    Expensify
+  </h2>
+  <NavigationLink />
+</header>
+`;
