@@ -11,9 +11,9 @@ exports[`should render it  1`] = `
     </h6>
   </Link>
   <div>
-    195
+    ₹ 1.95
      - 
-    0
+    01/01/1970
   </div>
 </div>
 `;

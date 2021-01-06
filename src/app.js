@@ -16,7 +16,6 @@ import 'react-dates/lib/css/_datepicker.css';
 
 
 const App=()=>(
-    
 <Provider store={configureStore()}>
 <BrowserRouter>
         <div>

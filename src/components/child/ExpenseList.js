@@ -5,7 +5,6 @@ import ExpenseListItems from './ExpenseListItems';
 
 export const ExpenseList=(props)=>{
     const {expenses}=props;
-  
     return (
         <div>
 
